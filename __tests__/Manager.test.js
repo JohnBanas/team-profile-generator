@@ -9,4 +9,4 @@ test('creates test for officeNumber', () => {
   const manager = new Manager('John', 38, 'example@gmail.com', mockRole, mockNum);
   expect(manager.officeNumber).toBe(mockNum);
   expect(manager.role).toBe(mockRole);
-})
+});
