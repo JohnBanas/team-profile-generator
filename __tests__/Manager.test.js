@@ -3,7 +3,7 @@ const Employee = require('../lib/Employee');
 
 jest.mock('../lib/Manager');
 
-test('creates test for officeNumber', () => {
+test('creates test for officeNumber and role change', () => {
   const mockNum = 6153089631;
   const mockRole = 'Manager'
   const manager = new Manager('John', 38, 'example@gmail.com', mockRole, mockNum);
