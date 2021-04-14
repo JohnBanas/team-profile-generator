@@ -1,0 +1,26 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "A CLI that takes in information about employees in a software engineering team and dynamically creates a HTML webpage with brief summaries of each employee",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnBanas/team-profile-generator.git"
+  },
+  "author": "John Banas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JohnBanas/team-profile-generator/issues"
+  },
+  "homepage": "https://github.com/JohnBanas/team-profile-generator#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  },
+  "dependencies": {
+    "fs": "*",
+    "inquirer": "^8.0.0"
+  }
+}
