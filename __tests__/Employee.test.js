@@ -15,3 +15,9 @@ test('creates a employee object', () => {
   expect(employee.id).toEqual(expect.any(Number));
   expect(employee.email).toEqual(expect.any(String));
 });
+
+// let testVal = "1";
+// const emp = new Employee("sally", testVal, "a@a.com");
+
+// expect(employee.getId()).toBe("1");
+
