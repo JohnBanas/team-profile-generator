@@ -1,12 +1,15 @@
-const Employee = require('../lib/Employee');
 const Intern = require('../lib/Intern');
 
-jest.mock('../lib/Intern');
+//test intern getSchool()
+test('test intern getSchool()', () => {
+  const mockSchool = 'Example University';
+  const intern = new Intern('John', 38, 'example@gmail.com', mockSchool);
+  expect(intern.getSchool()).toBe(`${mockSchool}`);
+});
 
-test('test for new role and school', () => {
-  const mockNRole = 'Intern';
-  const mockSchool = 'Example University'
-  const intern = new Intern('John', 38, 'example@gmail.com', mockNRole, mockSchool);
-  expect(intern.role).toBe(mockNRole);
-  expect(intern.school).toBe(mockSchool);
+//test intern role change
+test('test intern getRole()', () => {
+  const mockSchool = 'Example University';
+  const intern = new Intern('John', 38, 'example@gmail.com', mockSchool);
+  expect(intern.getRole()).toBe('Intern');
 });
